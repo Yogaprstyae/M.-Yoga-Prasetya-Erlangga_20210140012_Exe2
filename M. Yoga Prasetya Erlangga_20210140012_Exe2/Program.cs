@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
 {
-    internal class Program
+    class Program
     {
+        int[] yoga = new int[52];
+        int n;
+        int i;
+
         static void Main(string[] args)
         {
         }
