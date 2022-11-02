@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,20 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
                 yoga[i] = Int32.Parse(s1);
+            }
+        }
+        public void sort1()
+        {
+            for (int i = 0; i < n; i++)
+            {
+                int temp = yoga[i];
+                int MY = i - 1;
+                while (MY >= 0 && yoga[MY] > temp)
+                {
+                    yoga[MY + 1] = yoga[MY];
+                    MY--;
+                }
+                yoga[MY + 1] = temp;
             }
         }
         static void Main(string[] args)
