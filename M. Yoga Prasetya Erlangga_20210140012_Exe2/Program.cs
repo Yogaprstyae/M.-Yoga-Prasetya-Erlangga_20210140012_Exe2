@@ -50,6 +50,46 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
                 yoga[MY + 1] = temp;
             }
         }
+        public void sort2()
+        {
+            char ch;
+            do
+            {
+                // accept the number to be searched
+                Console.Write
+                    ("\n Enter element want you to search :");
+                int item = Convert.ToInt32(Console.ReadLine());
+
+                // apply benary search
+                int lowerbound = 0;
+                int upperbound = n - 1;
+
+                // obtain the index of the middle elements
+                int mid = (lowerbound + upperbound) / 2;
+                int ctr = 1;
+
+                // loop to search for the elemenets int the array
+                while ((item != yoga[mid]) && (lowerbound <= upperbound))
+                {
+                    if (item > yoga[mid])
+                        lowerbound = mid + 1;
+                    else
+                        upperbound = mid - 1;
+
+                    mid = (lowerbound + upperbound) / 2;
+                    ctr++;
+                }
+                if (item == yoga[mid])
+                    Console.WriteLine("\n" + item.ToString() + "Found at position"
+                        + (mid + 1).ToString());
+                else
+                    Console.WriteLine("\n" + item.ToString() + "Not found int the array \n");
+                Console.WriteLine("\n Number of comparasion : " + ctr);
+
+                Console.WriteLine("\n Continue search (y/n)");
+                ch = char.Parse(Console.ReadLine().ToUpper());
+            } while ((ch == 'y'));
+        }
         public void display()
         {
             Console.WriteLine("");
