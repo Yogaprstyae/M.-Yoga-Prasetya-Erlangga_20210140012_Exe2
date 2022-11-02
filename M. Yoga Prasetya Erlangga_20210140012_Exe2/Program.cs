@@ -66,6 +66,7 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
         {
             Program exe = new Program();
             int menu;
+            char m;
             Console.WriteLine("Menu Option");
             Console.WriteLine("===========");
             Console.WriteLine("1. Sort1");
@@ -75,7 +76,16 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
             menu = Convert.ToInt32(Console.ReadLine());
             switch (menu)
             {
-
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("..............");
+                    Console.WriteLine(" Sort1 Search");
+                    Console.WriteLine("..............");
+                    exe.input();
+                    exe.sort1();
+                    exe.display();
+                    Console.Read();
+                    break;
             }
         }
     }
