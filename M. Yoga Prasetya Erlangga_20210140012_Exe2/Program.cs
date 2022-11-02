@@ -50,6 +50,18 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
                 yoga[MY + 1] = temp;
             }
         }
+        public void display()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("------------------------");
+            Console.WriteLine(" Shorted Array Elements ");
+            Console.WriteLine("------------------------");
+            for (int MY = 0; MY < n; MY++)
+            {
+                Console.WriteLine(yoga[MY]);
+            }
+            Console.WriteLine("");
+        }
         static void Main(string[] args)
         {
         }
