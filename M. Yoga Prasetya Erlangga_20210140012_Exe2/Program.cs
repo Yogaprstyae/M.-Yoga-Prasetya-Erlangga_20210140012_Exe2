@@ -64,6 +64,19 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
         }
         static void Main(string[] args)
         {
+            Program exe = new Program();
+            int menu;
+            Console.WriteLine("Menu Option");
+            Console.WriteLine("===========");
+            Console.WriteLine("1. Sort1");
+            Console.WriteLine("2. Sort2");
+            Console.WriteLine("3. Exit");
+            Console.WriteLine("Enter your choise (1,2,3) : ");
+            menu = Convert.ToInt32(Console.ReadLine());
+            switch (menu)
+            {
+
+            }
         }
     }
 }
