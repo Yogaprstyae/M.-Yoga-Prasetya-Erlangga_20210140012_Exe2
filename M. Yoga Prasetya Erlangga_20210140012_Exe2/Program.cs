@@ -123,16 +123,18 @@ namespace M.Yoga_Prasetya_Erlangga_20210140012_Exe2
                     exe.input();
                     exe.sort1();
                     exe.display();
-                    Console.WriteLine("Prees enter to exit. ");
                     Console.Read();
+                    Console.WriteLine("Prees enter to exit. ");
                     break;
                     case 2:
                     Console.WriteLine("");
                     Console.WriteLine("..............");
                     Console.WriteLine(" Sort2 Search");
                     Console.WriteLine("..............");
+                    Console.Read();
                     exe.input();
                     exe.sort2();
+                    Console.WriteLine("Prees enter to exit. ");
                     break;
             }
         }
